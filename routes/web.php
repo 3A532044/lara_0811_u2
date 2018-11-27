@@ -22,3 +22,7 @@ Route::get('hello/{name}', function($name) {
 Route::get('hello/{name?}', function($name = 'Everybody') {
     return 'Hello, '.$name;
 });
+
+Route::get('app/{name?}', function($name = 'Everybody') {
+    return 'APP, '.$name;
+});
